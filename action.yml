@@ -1,0 +1,26 @@
+name: "Pusher Trigger"
+description: "Send pusher from Github Actions"
+inputs:
+  app_id:
+    description: "pusher instance parameter app_id like [0123456]"
+    required: true
+  key:
+    description: "pusher instance parameter key like [0123456789abcdefghij]"
+    required: true
+  secret:
+    description: "pusher instance parameter secret like [abcdefghij0123456789]"
+    required: true
+  cluster:
+    description: "pusher instance parameter cluster like ap3"
+    required: true
+  channel:
+    description: "web-socket channel name"
+    required: true
+  event:
+    description: "web-socket event name"
+    required: true
+  body:
+    description: "web-socket body"
+runs:
+  using: "node12"
+  main: "dist/index.js"

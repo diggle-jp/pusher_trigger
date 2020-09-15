@@ -1,0 +1,30 @@
+{
+  "name": "pusher_trigger",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint **.js",
+    "package": "ncc build index.js -o dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zakky21/pusher_trigger.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zakky21/pusher_trigger/issues"
+  },
+  "homepage": "https://github.com/zakky21/pusher_trigger#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.5",
+    "pusher-js": "^7.0.0"
+  },
+  "devDependencies": {
+    "@zeit/ncc": "^0.22.3",
+    "eslint": "^7.9.0"
+  }
+}
