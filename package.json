@@ -6,25 +6,26 @@
   "scripts": {
     "lint": "eslint **.js",
     "package": "ncc build index.js -o dist",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zakky21/pusher_trigger.git"
+    "url": "git+https://github.com/diggle-jp/pusher_trigger.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/zakky21/pusher_trigger/issues"
+    "url": "https://github.com/diggle-jp/pusher_trigger/issues"
   },
-  "homepage": "https://github.com/zakky21/pusher_trigger#readme",
+  "homepage": "https://github.com/diggle-jp/pusher_trigger#readme",
   "dependencies": {
     "@actions/core": "^1.2.5",
     "pusher": "^5.0.0"
   },
   "devDependencies": {
-    "@zeit/ncc": "^0.22.3",
-    "eslint": "^7.9.0"
+    "@vercel/ncc": "^0.38.2",
+    "eslint": "^7.9.0",
+    "jest": "^29.7.0"
   }
 }

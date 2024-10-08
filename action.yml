@@ -22,5 +22,5 @@ inputs:
   body:
     description: "web-socket body"
 runs:
-  using: "node12"
+  using: "node20"
   main: "dist/index.js"
