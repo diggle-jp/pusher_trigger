@@ -14,13 +14,19 @@ async function run() {
       appId,
       key,
       secret,
-      cluster
+      cluster,
     });
-    pusher.trigger(channel, event, body);
+    await pusher.trigger(channel, event, body);
   } catch (error) {
     core.setFailed(error.message);
     core.debug(error.stack);
   }
 }
 
-run();
+// run関数をエクスポート
+module.exports = { run };
+
+// スクリプトが直接実行された場合にのみrun関数を呼び出す
+if (require.main === module) {
+  run();
+}
