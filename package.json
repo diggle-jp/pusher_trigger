@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/diggle-jp/pusher_trigger#readme",
   "dependencies": {
-    "@actions/core": "^1.2.5",
+    "@actions/core": "^2.0.0",
     "pusher": "^5.0.0"
   },
   "devDependencies": {
