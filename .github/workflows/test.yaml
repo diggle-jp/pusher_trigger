@@ -18,6 +18,8 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
+        env:
+          TAKUMI_GUARD_TOKEN: ${{ secrets.TAKUMI_GUARD_TOKEN }}
 
       - name: Run tests
         run: npm test

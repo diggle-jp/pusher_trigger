@@ -3,6 +3,7 @@
   "extends": [
     "config:recommended"
   ],
+  "npmrc": "registry=https://npm.flatt.tech/",
   "schedule": [
     "before 9am on the first day of the month"
   ]
